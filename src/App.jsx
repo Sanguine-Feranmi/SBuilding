@@ -3,7 +3,7 @@ import Navbar from "./components/header";
 import Landing from "./components/landing/landing";
 import Properties from "./components/properties/properties";
 import Banner from "./components/banner";
-import About from "./components/about/About";
+import About from "./components/about/about";
 
 function App() {
   return (
