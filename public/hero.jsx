@@ -20,7 +20,7 @@ const manage = [
 export default function Hero() {
   return (
     <>
-      <div className="flex flex-col w-full md:flex-row-reverse gap-8 mb-20 items-center md:items-stretch">
+      <div className="flex flex-col w-full md:flex-row-reverse gap-8 mb-20 items-center md:items-stretch lg:w-full mx-auto px-4">
         {/* Image Section */}
         <div className="imgPart relative flex justify-center items-center bg-gray-900 md:w-1/2 rounded-b-3xl w-full overflow-hidden shadow-lg">
           <img
@@ -76,7 +76,7 @@ export default function Hero() {
         ))}
       </div>
       {/* Featured Properties */}
-      <div className="featured-props my-20 text-white font-bold pb-5 px-4 max-w-6xl mx-auto">
+      <div className="featured-props my-20 text-white font-bold pb-5 px-10 mx-auto">
         <div className="flex flex-col gap-3 md:gap-5 mb-8">
           <h1 className="text-3xl md:text-4xl">Featured Properties</h1>
           <p className="font-light italic text-gray-300 text-base md:text-lg">
@@ -86,11 +86,11 @@ export default function Hero() {
         <FeaturedProp />
       </div>
       {/* Testimonials */}
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="w-full mx-auto">
         <Testimonial />
         
       </div>
-      <div className="">
+      <div className=" pb-10">
         <Faq/>
       </div>
       

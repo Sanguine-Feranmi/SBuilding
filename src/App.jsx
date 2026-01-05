@@ -4,6 +4,7 @@ import Landing from "./components/landing/landing";
 import Properties from "./components/properties/properties";
 import Banner from "./components/banner";
 import About from "./components/about/about";
+import Footer from "./components/footer/footer";
 
 function App() {
   return (
@@ -14,8 +15,8 @@ function App() {
         <Route path="/" element={<Landing />} />
         <Route path="/about" element={<About />} />
         <Route path="/properties" element={<Properties />} />
-        {/* <Route path="/services" element={<Services />} /> */}
       </Routes>
+      <Footer/>
 
     </BrowserRouter>
   );

@@ -55,9 +55,9 @@ export default function Properties() {
   };
 
   return (
-    <div className="pHero bg-[#1A1A1A] px-6 py-12 text-white">
+    <div className="pHero bg-[#1A1A1A] text-white">
       {/* Header */}
-      <div className="max-w-5xl mb-10">
+      <div className="w-full py-20 bg-gradient-to-r from-[#404248] to-[#1A1A1A]">
         <h1 className="text-3xl font-semibold mb-4">Properties Page</h1>
         <p className="text-gray-400 leading-relaxed">
           Welcome to Estatein, where your dream property awaits in every corner
@@ -66,7 +66,7 @@ export default function Properties() {
         </p>
       </div>
 
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-4 px-5">
         {/* Search Form */}
         <div className="w-full md:w-3/4 mx-auto">
           <form onSubmit={handleSubmit} className="mx-auto mt-10 max-w-2xl w-full">
@@ -136,7 +136,7 @@ export default function Properties() {
       </div>
 
       {/* Featured Properties */}
-      <div className="mt-20">
+      <div className="mt-20 px-5 ">
         <div className="mb-6">
           <h2 className="text-2xl sm:text-3xl font-bold">Discover a World of Possibilities</h2>
           <p className="text-sm sm:text-base mt-2">
@@ -149,8 +149,8 @@ export default function Properties() {
       </div>
 
       {/* Contact Form */}
-      <div className="mt-20">
-        <div className="mb-6">
+      <div className="mt-20  bg-[#0b0b0f] py-20">
+        <div className="mb-6 mx-auto px-5 md:px-0 max-w-6xl">
           <h2 className="text-2xl sm:text-3xl font-bold">Get in Touch</h2>
           <p className="text-sm sm:text-base mt-2">
             Ready to find your dream property? Contact us today and let our team help you discover the perfect home.
@@ -164,7 +164,7 @@ export default function Properties() {
 
 function ContactForm() {
   return (
-    <div className="w-full rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.04] to-white/[0.02] p-6 md:p-8">
+    <div className="w-full rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.04] to-white/[0.02] p-6 md:p-8 mx-auto  max-w-6xl">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         <FormInput label="First Name" placeholder="Enter First Name" />
         <FormInput label="Last Name" placeholder="Enter Last Name" />

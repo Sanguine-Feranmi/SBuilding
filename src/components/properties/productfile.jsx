@@ -65,23 +65,21 @@ export const Productfile = () => {
 
   const [descLength, setDescLength] = useState(getResponsiveLength());
 
-  // Update descLength on window resize
-  // Use useEffect instead of useState for side effects
   useEffect(() => {
     const handleResize = () => setDescLength(getResponsiveLength());
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  const visibleCards = showAll ? cardTxt : cardTxt.slice(0, 3);
+  const visibleCards = showAll ? cardTxt : cardTxt.slice(0, 4);
 
   const toggleReadMore = (index) => {
     setExpandedIndex(expandedIndex === index ? null : index);
   };
 
   return (
-    <div className="space-y-8 w-[80%] md:w-full mx-auto mt-20">
-      <div className="prod-box grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full mx-auto ">
+    <div className="space-y-8 w-full md:w-full mx-auto mt-20">
+      <div className="prod-box grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full mx-auto ">
         {visibleCards.map((item, index) => {
           const isExpanded = expandedIndex === index;
           const responsiveShortText = item.desc.slice(0, descLength);

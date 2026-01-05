@@ -10,7 +10,7 @@ export default function Faq () {
     return (
 
         <>
-        <h2 className="text-2xl font-bold text-white text-left py-20">Frequently Asked Questions (FAQ)</h2>
+        <h2 className="text-2xl max-w-3xl mx-auto space-y-6 px-4 font-bold text-white text-left py-20">Frequently Asked Questions (FAQ)</h2>
         <div className="max-w-3xl mx-auto space-y-6 px-4">
             <Accordion
                 type="single"

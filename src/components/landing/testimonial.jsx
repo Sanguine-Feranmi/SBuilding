@@ -48,8 +48,8 @@ const testimonials = [
 
 export default function Testimonial() {
     return (
-        <div>
-            <div className="text-white mb-8">
+        <div className='w-full bg-[#000000] py-20' >
+            <div className=" text-white mb-8 b max-w-6xl mx-auto">
                 <h1 className="text-3xl font-bold mb-4">What our client says</h1>
                 <p className="text-gray-400">
                     Read the success stories and heartfelt testimonials from our valued clients. Discover why they chose Estatein for their real estate needs.

@@ -4,13 +4,13 @@ import { Star, GraduationCap, Users, BadgeCheck, Twitter, Send, Globe, Layers, E
 import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { motion } from 'framer-motion';
 import React from "react";
-import { DraggableCard
-} from "@/components/ui/draggable-card";
+// import { DraggableCard
+// } from "@/components/ui/draggable-card";
 
-import Team1 from '/Team1.png';
-import Team2 from '/Team2.png';
-import Team3 from '/Team3.png';
-import Team4 from '/Team4.png';
+// import Team1 from '/Team1.png';
+// import Team2 from '/Team2.png';
+// import Team3 from '/Team3.png';
+// import Team4 from '/Team4.png';
 
 
 const caseStudies = [
@@ -190,9 +190,9 @@ const cardsData = [
 
 export default function About() {
   return (
-    <div className="bg-[#141414] text-white p-4 sm:p-8">
+    <div className="bg-[#141414] text-white ">
       {/* Our Journey Section */}
-      <section className="flex flex-col gap-8 sm:gap-10 md:flex-row-reverse max-w-6xl mx-auto">
+      <section className="flex flex-col gap-8 sm:gap-10 md:flex-row-reverse">
         <div className="w-full md:w-1/2 mx-auto mt-6 sm:mt-10">
           <img
             src={house}
@@ -214,7 +214,7 @@ export default function About() {
       </section>
 
       {/* Our Values Section */}
-      <section className="mt-10 flex flex-col lg:flex-row-reverse gap-8 sm:gap-10 max-w-6xl mx-auto justify-center items-center">
+      <section className="mt-20 flex flex-col lg:flex-row-reverse gap-8 sm:gap-10  mx-auto justify-center items-center">
         <div className="mb-6 lg:w-1/2">
           <h2 className="text-2xl sm:text-3xl font-bold">Our Values</h2>
           <p className="text-sm sm:text-base mt-2">
@@ -251,7 +251,7 @@ export default function About() {
       </section>
 
       {/* Our Achievements Section */}
-      <section className="mt-10">
+      <section className="mt-10 max-w-6xl mx-auto px-4">
         <div className="mb-6">
           <h2 className="text-2xl sm:text-3xl font-bold">Our Achievements</h2>
           <p className="text-sm sm:text-base mt-2">
@@ -273,8 +273,8 @@ export default function About() {
       </section>
 
       {/* Navigating Process Section */}
-      <section className="mt-10">
-        <div className="mb-6">
+      <section className="mt-10 bg-[#0b0b0f] py-10">
+        <div className="mb-6 max-w-6xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-bold">Navigating Process</h2>
           <p className="text-sm sm:text-base mt-2">
             Our story is one of continuous growth and evolution. We started as a small team with big dreams, determined to create a real estate platform that transcended the ordinary.
@@ -286,7 +286,7 @@ export default function About() {
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto"
           >
             {steps.map((item, index) => (
               <motion.div
@@ -317,15 +317,15 @@ export default function About() {
       </section>
       {/* Team  */}
 
-      <div className="mt-20">
-           <div className="mb-6">
+      <div className="pt-20 bg-black ">
+           <div className="max-w-6xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-bold">Meet Our Team</h2>
           <p className="text-sm sm:text-base mt-2">
             Our story is one of continuous growth and evolution. We started as a small team with big dreams, determined to create a real estate platform that transcended the ordinary.
           </p>
         </div>
     <section className="w-full bg-black py-20 px-6">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {teamMembers.map((member) => (
             <div
