@@ -4,17 +4,12 @@ import invest from '/invest.png'
 import unlock from '/unlock.png'
 import effort from '/effort-manage.png'
 import CircleButton from '../src/components/landing/circle'
-import { FeaturedProp } from '../src/components/landing/featuredProp'
+import { FeaturedProp } from '../src/components/properties/featuredProp'
 import Testimonial from '../src/components/landing/testimonial'
 import Faq from '../src/components/landing/faq'
 import Stat from '@/components/landing/stat'
 
 
-// const stats = [
-//   { value: "200+", label: "Happy Customers" },
-//   { value: "10k+", label: "Properties For Clients" },
-//   { value: "16+", label: "Years of Experience" },
-// ];
 const manage = [
   { icon: find, label: "Find Your Dream Home" },
   { icon: unlock, label: "Unlock Property Value" },
@@ -56,24 +51,6 @@ export default function Hero() {
           {/* Stats Cards */}
           <section className="py-6">
             <Stat/>
-            {/* <div className="max-w-3xl mx-auto px-0">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {stats.slice(0, 2).map((stat, idx) => (
-                  <div
-                    key={idx}
-                    className="border border-gray-700 rounded-2xl p-6 text-center bg-[#18181b] shadow-md"
-                  >
-                    <p className="text-3xl md:text-4xl font-bold text-white">{stat.value}</p>
-                    <p className="text-gray-400 mt-2 text-base">{stat.label}</p>
-                  </div>
-                ))}
-
-                <div className="md:col-span-2 border border-gray-700 rounded-2xl p-6 text-center bg-[#18181b] shadow-md">
-                  <p className="text-3xl md:text-4xl font-bold text-white">{stats[2].value}</p>
-                  <p className="text-gray-400 mt-2 text-base">{stats[2].label}</p>
-                </div>
-              </div>
-            </div> */}
           </section>
         </div>
       </div>
