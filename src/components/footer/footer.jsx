@@ -1,4 +1,4 @@
-import { footerData } from "./footerData";
+import { footerData } from "./footerdata";
 
 export default function Footer() {
     const { brand, newsletter, links, socials, copyright } =
