@@ -1,16 +1,8 @@
 import Stat from '../landing/stat';
 import house from '/SubContainer.png';
-import { Star, GraduationCap, Users, BadgeCheck, Twitter, Send, Globe, Layers, ExternalLink, Quote } from "lucide-react";
+import { Star, GraduationCap, Users, BadgeCheck, Twitter, Send } from "lucide-react";
 import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { motion } from 'framer-motion';
-import React from "react";
-// import { DraggableCard
-// } from "@/components/ui/draggable-card";
-
-// import Team1 from '/Team1.png';
-// import Team2 from '/Team2.png';
-// import Team3 from '/Team3.png';
-// import Team4 from '/Team4.png';
 
 
 const caseStudies = [
@@ -370,10 +362,6 @@ export default function About() {
         </div>
       </div>
     </section>
-      </div>
-      {/* unknon */}
-      <div className="">
-          
       </div>
     </div>
   );

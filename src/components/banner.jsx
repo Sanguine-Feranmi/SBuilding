@@ -7,7 +7,6 @@ function Banner() {
 
   return (
     <div className="bg-[#0a0a0a] text-white flex items-center justify-between px-4 md:px-8 py-3 pt-16 relative overflow-hidden">
-      {/* Left text */}
       <div className="flex items-center gap-2 text-sm md:text-base">
         <span className="text-yellow-400">✨</span>
         <span>
@@ -18,7 +17,6 @@ function Banner() {
         </span>
       </div>
 
-      {/* Close button */}
       <button
         onClick={() => setIsVisible(false)}
         className="absolute right-4 flex items-center justify-center w-6 h-6 rounded-full hover:bg-gray-700 transition"
